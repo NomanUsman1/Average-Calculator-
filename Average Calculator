@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Program value = new Program();
+        double avr = value.average();
+        value.output(avr);
+    }
+    public double average()
+    {
+        int number1, number2, number3;
+        double avg;
+        Console.WriteLine("Enter First number:");
+        number1 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter Second number:");
+        number2 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter Third number:");
+        number3 = Convert.ToInt32(Console.ReadLine());
+        avg = (number1 + number2 + number3) / 3;
+        return avg;
+    }
+    public void output(double op)
+    {
+        Console.WriteLine("Average is: " + op);
+    }
+}
